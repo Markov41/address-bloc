@@ -1,1 +1,3 @@
-puts "Welcome to AddressBloc!"
+def hello_world
+    puts "Welcome to AddressBloc!"
+end
