@@ -14,6 +14,7 @@ class MenuController
         puts "3 - Search for an entry"
         puts "4 - Import entries from a CSV"
         puts "5 - Exit"
+        puts "911 - Erase all entries"
         print "Enter your selection: "
         
         selection = gets.to_i
@@ -38,6 +39,11 @@ class MenuController
             when 5
                 puts "Good-bye!"
                 exit(0)
+            when 911
+                system "clear"
+                @address_book.detonate
+                puts "All entries have been erased!"
+                main_menu
             else
                 system "clear"
                 puts "Sorry, that is not a valid input"
